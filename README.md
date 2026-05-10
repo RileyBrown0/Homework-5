@@ -1,10 +1,4 @@
-# Asynchronous AI Inference System
-
-A distributed ML pipeline: Airflow → S3 → SQS → Kubernetes consumers.
-
-**Requires an AWS account.** All storage and messaging runs on real AWS services.
-
----
+# Riley Brown: MLOPS Final Project
 
 ## Project Structure
 
@@ -41,7 +35,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 2. Configure credentials
+### 2. Credentials
 
 ```bash
 cp .env.example .env
@@ -55,21 +49,6 @@ AWS_SECRET_ACCESS_KEY=your_secret
 AWS_S3_BUCKET=your-unique-bucket-name
 AWS_SQS_QUEUE_NAME=inference-queue
 ```
-
-Your IAM user needs: `s3:*` on your bucket and `sqs:*` on your queue.
-
-### 3. Create AWS resources (one time only)
-
-```bash
-python setup_aws.py
-```
-
-Copy the printed SQS URL into `.env`:
-```
-AWS_SQS_URL=https://sqs.us-east-1.amazonaws.com/123456789/inference-queue
-```
-
----
 
 ## Running the Pipeline
 
