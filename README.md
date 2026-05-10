@@ -1,9 +1,9 @@
-# Asynchronous AI Inference System
+# Riley Brown MLOPS Final Project
 
-A distributed ML pipeline: Airflow → S3 → SQS → Kubernetes consumers.
+(For future reference), this is a distributed ML pipeline: Airflow → S3 → SQS → Kubernetes consumers.
 
-**Designed to run in an AWS Academy / Canvas Learner Lab environment (Cloud9).**
-No credential setup required — your session credentials are automatically available.
+
+Context: Most of the code in bulk was ran by AI, with my decisions from class material on how to structure the pipeline. For whatever reason I could not get the breast cancer data to work, so I ended up just generating synthetic data.
 
 ---
 
