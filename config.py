@@ -1,11 +1,7 @@
 """
 config.py
 ---------
-Central config for the pipeline.
-
-AWS credentials are NOT set here. When running in an AWS Academy / Canvas
-Learner Lab environment, boto3 automatically picks up temporary session
-credentials from the environment. No credential handling needed.
+Central config for the pipeline
 
 The only values you need to set are AWS_S3_BUCKET and AWS_SQS_URL.
 Run setup_aws.py once to create those resources and get the values.
