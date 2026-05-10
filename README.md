@@ -5,7 +5,6 @@
 ```
 .
 ├── config.py                    # Central config — reads from environment / .env
-├── setup_aws.py                 # One-time script: creates S3 bucket + SQS queue
 ├── requirements.txt             # Python dependencies
 ├── Dockerfile                   # Build from project root
 ├── .env.example                 # Copy to .env and fill in credentials
