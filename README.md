@@ -3,7 +3,7 @@
 (For future reference), this is a distributed ML pipeline: Airflow → S3 → SQS → Kubernetes consumers.
 
 
-Context: Most of the code in bulk was ran by AI, with my decisions from class material on how to structure the pipeline. For whatever reason I could not get the breast cancer data to work, so I ended up just generating synthetic data.
+Context: Most of the code in bulk was ran by AI, with my decisions from class material on how to structure the pipeline. ALSO, For whatever reason I could not get the breast cancer data to work, so I ended up just generating synthetic data, so that is why ther are additional segments. 
 
 ---
 
