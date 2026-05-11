@@ -8,8 +8,6 @@ Kubernetes consumer — polls SQS, runs inference, writes predictions to S3.
   - Writes each prediction to S3 before deleting the message (at-least-once delivery)
   - On error, leaves the message in the queue so SQS redelivers after visibility timeout
 
-boto3 picks up AWS credentials automatically from the Canvas/Learner Lab
-environment — no explicit credential passing needed.
 """
 
 import io
@@ -83,7 +81,7 @@ def run():
                 X          = np.array(features, dtype=float).reshape(1, -1)
                 prediction = int(model.predict(X)[0])
 
-                # Write to S3 BEFORE deleting — no lost predictions on crash
+                # Write to S3 BEFORE deleting!!! for no lost predictions on crash
                 write_prediction(s3, record_id, prediction)
                 sqs.delete_message(QueueUrl=config.AWS_SQS_URL, ReceiptHandle=receipt)
                 print(f"[consumer]   {record_id} → prediction={prediction} ✓")
