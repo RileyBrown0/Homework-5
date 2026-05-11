@@ -15,7 +15,7 @@ Context: Most of the code in bulk was ran by AI, with my decisions from class ma
 ├── requirements.txt             # Python dependencies
 ├── Dockerfile                   # Build from project root
 ├── .env.example                 # Copy to .env and fill in bucket/queue values
-├── .gitignore
+
 ├── training_dag.py          # Airflow: generate data → train → upload to S3
 ├── queue_population_dag.py  # Airflow: read test set from S3 → enqueue to SQS
 ├── consumer.py              # Kubernetes: poll SQS → infer → write to S3
