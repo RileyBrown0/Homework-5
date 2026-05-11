@@ -5,8 +5,6 @@ Airflow DAG — Queue Population Flow
   1. Read test_data.json from S3
   2. Send one SQS message per record
 
-boto3 picks up AWS credentials automatically from the Canvas/Learner Lab
-environment — no explicit credential passing needed.
 """
 
 import os
