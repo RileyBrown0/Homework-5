@@ -6,8 +6,6 @@ Airflow DAG — Training Flow
   2. Train a logistic regression model
   3. Upload model.pkl and test_data.json to S3
 
-boto3 picks up AWS credentials automatically from the Canvas/Learner Lab
-environment — no explicit credential passing needed.
 """
 
 import io
