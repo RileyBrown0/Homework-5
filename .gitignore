@@ -1,0 +1,23 @@
+# Never commit credentials
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Generated files
+*.pkl
+*.joblib
+
+# Airflow
+logs/
+airflow.db
+airflow.cfg
+webserver_config.py
